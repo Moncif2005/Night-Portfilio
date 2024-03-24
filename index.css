@@ -116,7 +116,7 @@ header{
 /* Home Section Start */
 
 .home{
-    padding:  60px 140px;
+    padding:  60px 130px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -254,7 +254,7 @@ header{
         height: 36px;
     }
 }
-@media (max-width:400px) {
+@media (max-width:450px) {
 
 
     .titles h4{
@@ -274,7 +274,14 @@ header{
     .image img {
         display: none;
     }
-
+    .home{
+        padding:  60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 /* Home Section End */
