@@ -116,7 +116,7 @@ header{
 /* Home Section Start */
 
 .home{
-    padding: 60px;
+    padding:  60px 140px;
     display: flex;
     justify-content: center;
     flex-direction: row;

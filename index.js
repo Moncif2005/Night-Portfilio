@@ -3,7 +3,7 @@ const script = document.createElement("script");
         script.onload = function () {
             const sr = ScrollReveal({
                 origin: 'left',
-                distance: '90px',
+                distance: '50px',
                 duration: 3000,
                 delay: 450,
                 reset: false, 
@@ -36,7 +36,6 @@ const script = document.createElement("script");
             sr.reveal('.contact-section', { delay: 510, origin: 'right' });
             sr.reveal('.contact-img', { delay: 410, origin: 'bottom' });
 
-            sr.reveal('.footer-section', { delay: 410, origin: 'bottom' });
         };
 
         document.head.appendChild(script);
