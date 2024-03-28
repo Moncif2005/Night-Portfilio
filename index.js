@@ -1,10 +1,19 @@
+const docTitle = document.title;
+window.addEventListener("blur", () => {
+    document.title = "I'm waiting for you"
+})
+window.addEventListener("focus", () => {
+    document.title = docTitle;
+})
+
+
 const script = document.createElement("script");
         script.src = "scrollreveal.min.js";
         script.onload = function () {
             const sr = ScrollReveal({
                 origin: 'left',
-                distance: '50px',
-                duration: 3000,
+                distance: '30px',
+                duration: 1500,
                 delay: 450,
                 reset: false, 
             });
@@ -16,7 +25,7 @@ const script = document.createElement("script");
             sr.reveal('.icons-social', { delay: 500 });
             sr.reveal('.image', { delay: 500 ,origin: 'right'});
 
-            sr.reveal('.image-about', { delay: 510,origin: 'left' });
+            sr.reveal('.image-about', { delay: 520,origin: 'left' });
             sr.reveal('.text-about', { delay: 520, origin:'right' });
             sr.reveal('.about-title', { delay: 530 });
             
@@ -42,20 +51,41 @@ const script = document.createElement("script");
 
 
 
-        const list = document.querySelector(".project");
-        const list_2 = document.querySelector(".project-2");
+const list = document.querySelector(".project");
+const list_2 = document.querySelector(".project-2");
         
-        const left_btn = document.querySelector(".left-side"); 
-        const right_btn = document.querySelector(".right-side"); 
+const left_btn = document.querySelector(".left-side"); 
+const right_btn = document.querySelector(".right-side"); 
 
-        left_btn.addEventListener("click", () => {
-            list.style.display = "flex";
-            list_2.style.display = "none";
-        });
+left_btn.addEventListener("click", () => {
+    list.style.display = "flex";
+    list_2.style.display = "none";
+});
         
         
-        right_btn.addEventListener("click", () => {
-            list.style.display = "none";
-            list_2.style.display = "flex";
-        });
-        
+right_btn.addEventListener("click", () => {
+    list.style.display = "none";
+    list_2.style.display = "flex";
+});
+
+
+const err = document.querySelector(".error-txt"); 
+const nameInput = document.querySelector(".name");
+const emailInput = document.querySelector(".email");
+const subjectInput = document.querySelector(".subject");
+
+const emailErr = document.querySelector(".email + .error-txt");
+
+
+document.querySelector("#sumbit").addEventListener("click", function() {
+    if (nameInput.value.trim() === "") { 
+        err.style.display = "flex";
+    } else {
+        err.style.display = "none"; 
+    }
+    if (emailInput.match(/^[^ ]+@[^ ]+\.[a-z]{2,3}/) === "") { 
+        emailErr.style.display = "flex"; // Display the error message if email is empty
+    } else {
+        emailErr.style.display = "none"; // Hide the error message if email is not empty
+    }
+});
