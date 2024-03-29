@@ -67,25 +67,3 @@ right_btn.addEventListener("click", () => {
     list.style.display = "none";
     list_2.style.display = "flex";
 });
-
-
-const err = document.querySelector(".error-txt"); 
-const nameInput = document.querySelector(".name");
-const emailInput = document.querySelector(".email");
-const subjectInput = document.querySelector(".subject");
-
-const emailErr = document.querySelector(".email + .error-txt");
-
-
-document.querySelector("#sumbit").addEventListener("click", function() {
-    if (nameInput.value.trim() === "") { 
-        err.style.display = "flex";
-    } else {
-        err.style.display = "none"; 
-    }
-    if (emailInput.match(/^[^ ]+@[^ ]+\.[a-z]{2,3}/) === "") { 
-        emailErr.style.display = "flex"; // Display the error message if email is empty
-    } else {
-        emailErr.style.display = "none"; // Hide the error message if email is not empty
-    }
-});

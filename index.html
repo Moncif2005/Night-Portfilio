@@ -36,13 +36,13 @@
                 <a href="#about" class="btn-1">Learn More</a>
             </div>
             <div class="icons-social">
-                <a href="https://github.com/Moncif2005" class="icon">
+                <a target="_blank" href="https://github.com/Moncif2005" class="icon">
                     <img src="./Images/github.png" alt="GitHub">
                 </a>
-                <a href="https://www.behance.net/abdouBouterfas" class="icon">
+                <a target="_blank" href="https://www.behance.net/abdouBouterfas" class="icon">
                     <img src="./Images/Vector.png" alt="Social Media">
                 </a>
-                <a href="https://dribbble.com/abdou--24" class="icon">
+                <a target="_blank" href="https://dribbble.com/abdou--24" class="icon">
                     <img src="./Images/Vector 2.png" alt="Social Media">
                 </a>
             </div>
@@ -196,7 +196,7 @@
                                 This is figma desgne ,
                                 This is a Simple Portfolio designing by me with Figma
                             </p>
-                            <a href="https://www.figma.com/proto/LkCVNW3Ko6h4fRykVG5dY2/Simple-Portfolio?page-id=0%3A1&type=design&node-id=3-74&viewport=487%2C303%2C0.15&t=BryYex9spbJN9IDp-1&scaling=min-zoom&mode=design" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <a target="_blank" href="https://www.figma.com/proto/LkCVNW3Ko6h4fRykVG5dY2/Simple-Portfolio?page-id=0%3A1&type=design&node-id=3-74&viewport=487%2C303%2C0.15&t=BryYex9spbJN9IDp-1&scaling=min-zoom&mode=design" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                                 E-commerce website For Shoes,
                                 This is figma desgne
                             </p>
-                            <a href="" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <a target="_blank" href="https://www.figma.com/proto/XC5bOembh2RO9svuPvsrO0/Untitled?page-id=0%3A1&type=design&node-id=67-2&viewport=528%2C138%2C0.17&t=R59JvQBrfcPQIWLz-1&scaling=min-zoom&mode=design" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                                 Our website is a visual and informational tribute to the beauty and wonder of the Algerian Sahara.
                                 Through stunning imagery and insightful content, we aim to transport you to this unique landscape
                             </p>
-                            <a href="https://moncif2005.github.io/AlgDesert/" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <a target="_blank" href="https://moncif2005.github.io/AlgDesert/" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                             <p>
                                 Welcome to the Modern Fitness Center website, where we provide you with the perfect environment for exercising and improving your physical fitness.
                             </p>
-                            <a href="https://moncif2005.github.io/GymTimeapp/gymtime.html" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <a target="_blank" href="https://moncif2005.github.io/GymTimeapp/gymtime.html" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -288,25 +288,26 @@
   
                             <h2 class="chating-titel" >Send me a message</h2>
                             <div>
-                                <input type="text" placeholder="Name" class="name">
+                                <input type="text" placeholder="Name" id="username" class="name" required>
                                 <div class="error-txt">Full Name can't be blank</div>
                             </div>
                             
                             <div>
-                                <input type="text" placeholder="Email" class="email">
+                                <input type="text" placeholder="Email" id="email" class="email" required>
                                 <div class="error-txt">Email Address can't be blank</div>
                             </div>
                             
                             <div>
-                                <input type="text" placeholder="Subject" class="subject">
+                                <input type="text" placeholder="Phone" id="phone" class="subject" required>
                                 <div class="error-txt">Message can't be blank</div> 
                             </div>
 
                             <div>             
-                                <textarea type="text" placeholder="Your Message" class="message"></textarea>
+                                <textarea type="text" placeholder="Your Message" id="message" class="message" required></textarea>
                                 <div class="error-txt">Message can't be blank</div>
                             </div>
-                            <a id="sumbit" class="btn-1">Submit</a>
+                            <a type="submit" value="submit" id="submit" class="btn-1">Submit</a>
+
 
                     </div>
                     
@@ -347,6 +348,59 @@
         </div>
     </footer>
 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
+    
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDqIDtZ4R7W0jKnRZE3Sl3OVNU6ZQnfd_0",
+          authDomain: "test2-b2a34.firebaseapp.com",
+          projectId: "test2-b2a34",
+          storageBucket: "test2-b2a34.appspot.com",
+          messagingSenderId: "106858362083",
+          appId: "1:106858362083:web:a79a3db49cb6de719801d6",
+          measurementId: "G-RH5Z60NWGN"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+    
+        document.getElementById("submit").addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Retrieve values from the form
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    // Check if phone contains only numbers
+
+    if (!/^\d+$/.test(phone)) {
+        alert("Only numbers are allowed in the phone field!");
+        return;
+    }
+
+    // Save user data to the database
+    set(ref(db, 'user/' + username), {
+        username: username,
+        email: email,
+        PhoneNumber: phone,
+        message:message
+    }).then(() => {
+        alert("Login Successful!");
+    }).catch((error) => {
+        console.error('Error saving data:', error.message);
+        alert("An error occurred. Please try again.");
+    });
+});
+    </script>
+    
+    
     <script src="scrollreveal.min.js"></script>
     <script src="index.js"></script>
 </body>
