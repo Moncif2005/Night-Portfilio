@@ -1152,6 +1152,9 @@ footer{
     font-size: 14px;
     font-weight: 600;
 }
+.terms a{
+    color: rgba(255, 255, 255, 0.43);
+}
 @media only screen and (max-width: 1270px){
 
     .divider {
