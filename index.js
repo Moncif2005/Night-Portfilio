@@ -67,3 +67,4 @@ right_btn.addEventListener("click", () => {
     list.style.display = "none";
     list_2.style.display = "flex";
 });
+
