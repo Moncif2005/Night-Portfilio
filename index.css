@@ -655,6 +655,7 @@ header{
     justify-content: center;
     padding-top: 60px;
     gap: 40px;
+    margin-bottom: 50px;
 }
 .services h1{
     font-size: 40px;
@@ -711,10 +712,10 @@ header{
 }
 .project{
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
     flex-wrap: wrap;
     align-items: center;
-    gap: 130px;
+    gap: 220px;
 }
 .cart{
     flex-direction: column;
