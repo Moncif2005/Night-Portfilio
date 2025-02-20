@@ -654,7 +654,7 @@ header{
     align-items: center;
     justify-content: center;
     padding-top: 60px;
-    gap: 40px;
+    gap: 50px;
     margin-bottom: 50px;
 }
 .services h1{
@@ -703,7 +703,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 110px;
+    gap: 130px;
 }
 .projects h2{
     color: var(--purple-soft);
