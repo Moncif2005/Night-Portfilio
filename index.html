@@ -1,91 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-1829440940722228">
+    <meta name="description"
+        content="Moncif Abdelilleh - Frontend Developer & UI Designer portfolio showcasing web development projects and UI/UX designs.">
     <title>Night Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/Lo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="Images/Lo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <ul class="navbar">
             <a href="#home">Home</a>
+            <a href="#about">About</a>
+
+
+            <div class="logo">
+                <img src="./Images/Logo2 v2 1.png" alt="Logo">
+            </div>
             <a href="#skills">Skills</a>
+            <a href="#services">Projects</a>
 
-        <div class="logo">
-            <img src="./Images/Logo2 v2 1.png" alt="">
-        </div>
 
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </ul>
+        <nav class="nav-drawer" id="nav-drawer">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
             <a href="#services">Projects</a>
             <a href="#about">About</a>
-        </ul>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <section class="home" id="home">
         <div class="titles">
             <div class="text-part1">
-                <h4>I Am Moncif Abdelilleh  </h4>
-                <h2>Frontend Developer<br>& UI Designer</h2>
+                <h4>I Am Moncif Abdelilleh</h4>
+                <h2>Frontend Developer<br>&amp; UI Designer</h2>
             </div>
             <p class="paragraph">
-                I’m a Frontend Developer and UI Designer with experience in Website development. Check my projects and My skills. 
+                I'm a Frontend Developer and UI Designer with experience in building modern, responsive websites and
+                crafting intuitive UI/UX experiences. Explore my projects and skills below.
             </p>
             <div class="buttons">
                 <a href="#about" class="btn-1">Learn More</a>
+                <a href="#services" class="btn-2">View Projects</a>
             </div>
             <div class="icons-social">
-                <a target="_blank" href="https://github.com/Moncif2005" class="icon">
+                <a target="_blank" href="https://github.com/Moncif2005" class="icon" title="GitHub">
                     <img src="./Images/github.png" alt="GitHub">
                 </a>
-                <a target="_blank" href="https://www.behance.net/abdouBouterfas" class="icon">
-                    <img src="./Images/Vector.png" alt="Social Media">
+                <a target="_blank" href="https://www.behance.net/abdouBouterfas" class="icon" title="Behance">
+                    <img src="./Images/Vector.png" alt="Behance">
                 </a>
-                <a target="_blank" href="https://dribbble.com/abdou--24" class="icon">
-                    <img src="./Images/Vector 2.png" alt="Social Media">
+                <a target="_blank" href="https://dribbble.com/abdou--24" class="icon" title="Dribbble">
+                    <img src="./Images/Vector 2.png" alt="Dribbble">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/moncif-bouterfas-372973380/" class="icon" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
         </div>
         <div class="image">
-            <img src="./Images/Main.png" alt="Main Image">
+            <img src="./Images/Main.png" alt="Moncif Abdelilleh - Frontend Developer">
         </div>
     </section>
 
 
     <section class="about" id="about">
 
-            <h1 class="about-title">About</h1>
+        <h1 class="section-title about-title">About Me</h1>
 
         <div class="about-inside">
 
-
+            <!-- TOP ROW: image + bio -->
             <div class="about-all">
-
-                <img class="image-about" src="./Images/About.png" alt="About section image">
-
-                <div class="text-about">
-                    <h2>About me and my work : </h2>
-                    <div class="text-about2">
-                        <p>
-                            UI/UX Designer | Second-year Computer Science student <br>
-                            passionate about crafting innovative and user-friendly designs. Experienced in frontend development with React.js, Next.js,
-                            and Tailwind CSS. Worked on real-world UI/UX projects, including an E-commerce app and personal websites.
-                            Skilled in wireframing, prototyping, and responsive design, </p>
-                            
-                        <a href="#services" class="btn-1">My Work</a>
+                <div class="about-image-wrap">
+                    <img class="image-about" src="./Images/About.png" alt="Moncif Abdelilleh">
+                    <!-- floating badge -->
+                    <div class="about-badge">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>Open to Work</span>
                     </div>
-
                 </div>
 
+                <div class="text-about">
+                    <div class="about-label">Who I Am</div>
+                    <h2>Moncif Abdelilleh</h2>
+                    <p class="about-role">Frontend Developer &amp; UI/UX Designer</p>
+                    <p class="about-bio">
+                        I'm a second-year Computer Science student with a deep passion for
+                        crafting beautiful, functional digital experiences. I bridge the gap
+                        between design and development — turning ideas into pixel-perfect,
+                        responsive interfaces that feel great to use.
+                    </p>
+                    <p class="about-bio">
+                        My journey started with Figma wireframes and quickly expanded into
+                        full-stack frontend work with React.js, Next.js, and Tailwind CSS.
+                        I've delivered real-world projects spanning e-commerce, fitness,
+                        entertainment, and hospitality — each one pushing my craft further.
+                    </p>
 
+                    <!-- Stats row -->
+                    <div class="about-stats">
+                        <div class="stat-item" data-count="10">
+                            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item" data-count="3">
+                            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat-item" data-count="12">
+                            <span class="stat-number" data-target="12">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item" data-count="2">
+                            <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">App Projects</span>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="#services" class="btn-1">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn-2">Hire Me <i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTOM ROW: detail cards -->
+            <div class="about-cards">
+
+                <div class="about-card reveal-card">
+                    <div class="about-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="about-card-body">
+                        <h3>Education</h3>
+                        <p class="about-card-title">B.Sc. Computer Science</p>
+                        <p class="about-card-sub">Currently in 2nd year · Université Tlemcen</p>
+                        <ul class="about-card-list">
+                            <li>Data Structures &amp; Algorithms</li>
+                            <li>Object-Oriented Programming (Java, C)</li>
+                            <li>Software Engineering principles</li>
+                            <li>Database systems &amp; SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-card reveal-card">
+                    <div class="about-card-icon"><i class="fa-solid fa-palette"></i></div>
+                    <div class="about-card-body">
+                        <h3>Design Expertise</h3>
+                        <p class="about-card-title">UI/UX &amp; Visual Design</p>
+                        <p class="about-card-sub">Figma · Framer · Prototyping</p>
+                        <ul class="about-card-list">
+                            <li>Wireframing &amp; low/high-fidelity prototypes</li>
+                            <li>Design systems &amp; component libraries</li>
+                            <li>Responsive &amp; mobile-first layouts</li>
+                            <li>Published work on Behance &amp; Dribbble</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-card reveal-card">
+                    <div class="about-card-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="about-card-body">
+                        <h3>Development</h3>
+                        <p class="about-card-title">Frontend &amp; App Dev</p>
+                        <p class="about-card-sub">React · Next.js · React Native</p>
+                        <ul class="about-card-list">
+                            <li>React.js &amp; Next.js web apps</li>
+                            <li>TypeScript &amp; JavaScript (ES6+)</li>
+                            <li>Tailwind CSS &amp; CSS animations</li>
+                            <li>Firebase, REST APIs &amp; Git workflow</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-card reveal-card">
+                    <div class="about-card-icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="about-card-body">
+                        <h3>Interests</h3>
+                        <p class="about-card-title">Beyond the Screen</p>
+                        <p class="about-card-sub">What keeps me inspired</p>
+                        <ul class="about-card-list">
+                            <li>Exploring new design trends &amp; tools</li>
+                            <li>Contributing to open-source projects</li>
+                            <li>Photography &amp; visual storytelling</li>
+                            <li>Astronomy &amp; science communication</li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
-    
-        </div>
 
+            <!-- Timeline -->
+            <div class="about-timeline">
+                <h3 class="timeline-heading">My Journey</h3>
+                <div class="timeline">
+                    <div class="timeline-item reveal-timeline">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022</span>
+                            <h4>Started Learning Web Design</h4>
+                            <p>Picked up Figma and discovered the world of UI/UX design. Built first wireframes and
+                                prototypes.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-timeline">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023</span>
+                            <h4>First Real Projects</h4>
+                            <p>Published UI designs on Behance &amp; Dribbble. Started learning HTML, CSS, and
+                                JavaScript to bring designs to life.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-timeline">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024</span>
+                            <h4>Frontend Development</h4>
+                            <p>Mastered React.js, Next.js, and Tailwind CSS. Launched GymTime and Algerian Desert —
+                                first live deployed websites.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-timeline">
+                        <div class="timeline-dot active-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 — Now</span>
+                            <h4>Expanding Into Mobile</h4>
+                            <p>Learning React Native and Flutter. Building cross-platform apps while deepening CS
+                                fundamentals at university.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
@@ -93,75 +254,75 @@
 
     <div class="drive">
         <div class="img-div">
-            <img src="./Images/Be.png" />
-            <img src="./Images/up.png" />
-            <img src="./Images/Drib.png" />
+            <img src="./Images/Be.png" alt="Behance" />
+            <img src="./Images/up.png" alt="Upload" />
+            <img src="./Images/Drib.png" alt="Dribbble" />
         </div>
     </div>
 
 
     <section class="skills" id="skills">
-        <h1 class="skills-title">Skills</h1>
-
+        <h1 class="section-title skills-title">Skills</h1>
 
         <div class="skills-content">
             <div class="skills-content-div">
                 <div class="container">
-
                     <div class="imag">
-                        <img  src="./Images/html.png" alt="HTML image" />
+                        <img src="./Images/html.png" alt="HTML" />
                         <span class="social__tooltip social__tooltip-top">HTML</span>
                     </div>
                     <div class="imag">
-                        <img src="./Images/css.png" alt="CSS image" />
+                        <img src="./Images/css.png" alt="CSS" />
                         <span class="social__tooltip social__tooltip-top">CSS</span>
                     </div>
                     <div class="imag">
-                        <img src="./Images/js.png"  alt="JavaScript image" />
+                        <img src="./Images/js.png" alt="JavaScript" />
                         <span class="social__tooltip social__tooltip-top">JavaScript</span>
                     </div>
                     <div class="imag">
-                        <img src="./Images/Java.png" alt="Java image" />
-                        <span class="social__tooltip social__tooltip-top">Java</span>
+                        <img src="./Images/ts.png" alt="TypeScript" />
+                        <span class="social__tooltip social__tooltip-top">TypeScript</span>
                     </div>
                     <div class="imag">
-                        <img src="./Images/React js.png" alt="React.js image" />
-                        <span class="social__tooltip social__tooltip-top">React js</span>
+                        <img src="./Images/React js.png" alt="React.js" />
+                        <span class="social__tooltip social__tooltip-top">React.js</span>
                     </div>
                     <div class="imag">
-                        <img src="./Images/Next js.png" alt="Next.js image" />
-                        <span class="social__tooltip social__tooltip-top">Next js</span>
+                        <img src="./Images/Next js.png" alt="Next.js" />
+                        <span class="social__tooltip social__tooltip-top">Next.js</span>
                     </div>
-                    
                 </div>
-                
             </div>
-
-
 
             <div class="container-2">
                 <div class="imag">
-                    <img src="./Images/tail.png" alt="Tailwind CSS image" />
+                    <img src="./Images/tail.png" alt="Tailwind CSS" />
                     <span class="social__tooltip social__tooltip-bottom">Tailwind</span>
                 </div>
                 <div class="imag">
-                    <img src="./Images/C_Logo.png" alt="C image" />
+                    <img src="./Images/Java.png" alt="Java" />
+                    <span class="social__tooltip social__tooltip-bottom">Java</span>
+                </div>
+                <div class="imag">
+                    <img src="./Images/C_Logo.png" alt="C" />
                     <span class="social__tooltip social__tooltip-bottom">C</span>
                 </div>
                 <div class="imag">
-                    <img src="./Images/Github img.png" alt="GitHub image" />
-                    <span class="social__tooltip social__tooltip-bottom">GitHub</span>
+                    <img src="./Images/figma.png" alt="Figma" />
+                    <span class="social__tooltip social__tooltip-bottom">Figma</span>
                 </div>
                 <div class="imag">
-                    <img src="./Images/git.png" alt="Git image"/>
+                    <img src="./Images/flutter.png" alt="Flutter" />
+                    <span class="social__tooltip social__tooltip-bottom">Flutter</span>
+                </div>
+                <div class="imag">
+                    <img src="./Images/git.png" alt="Git" />
                     <span class="social__tooltip social__tooltip-bottom">Git</span>
                 </div>
                 <div class="imag">
-                    <img src="./Images/figma.png" alt="Figma image" />
-                    <span class="social__tooltip social__tooltip-bottom">Figma</span>
+                    <img src="./Images/Github img.png" alt="GitHub" />
+                    <span class="social__tooltip social__tooltip-bottom">GitHub</span>
                 </div>
-                
-            </div>
             </div>
         </div>
     </section>
@@ -169,252 +330,326 @@
 
 
     <section class="services" id="services">
-        <h1 class="services-title">Projects</h1>
-
+        <h1 class="section-title services-title">Projects</h1>
 
         <div class="ser-btn">
             <div class="big-button">
-                <a class="left-side">UI Designs</a>
-                <a class="right-side" >Web Development</a>
+                <a class="tab-btn active-tab" data-tab="project">UI Designs</a>
+                <a class="tab-btn" data-tab="project-2">Web Dev</a>
+                <a class="tab-btn" data-tab="project-3">App Dev</a>
             </div>
         </div>
-
 
         <div class="projects">
 
-
+            <!-- UI DESIGNS -->
             <div class="project">
 
                 <div class="cart">
-                    <img src="./Images/Behance Post 7.png" alt="Simple Portfolio">
-                    
-                    <div class="text-content">
-                        <div>
-                            <h2>Movies App</h2>
-                            <p>
-                                Designed a user-friendly UI template for a Movies App, resulting in a 40% increase
-                                    in user engagement during beta testing.
-                            </p>
-                            <a target="_blank" href="https://www.figma.com/design/frxJnRuLlE65rrkQiPRxwf/Movies-App?node-id=0-1&t=Aro2t3qMnFA2aJv6-1" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="cart">
-                    <img src="./Images/Post 10.png" alt="Simple Portfolio">
-                    
+                    <img src="./Images/Post 13-7.png" alt="Portfolio Web Site Design">
                     <div class="text-content">
                         <div>
                             <h2>Portfolio Web Site</h2>
-                            <p>
-                                I made this responsive template using Figma.
-                                 It's got a simple design with nice colors that are easy on the eyes.
-                            </p>
-                            <a target="_blank" href="https://www.figma.com/proto/7BNmfuzADXhRPnsOSJ1MKw/Untitled?page-id=0%3A1&node-id=1-3&viewport=323%2C109%2C0.11&t=L8mQ4C0rLVGChE3C-1&scaling=min-zoom&content-scaling=fixed" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <p>A standout portfolio website that showcases skills and achievements — clean, modern, and
+                                fully responsive.</p>
+                            <a target="_blank"
+                                href="https://www.behance.net/gallery/206154729/Portfolio-website-UI-Design-template"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="cart">
-                    <img src="./Images/Post 16.png" alt="Simple Portfolio">
-                    
+                    <img src="./Images/Restaurant Web Site.png" alt="Restaurant Web Site Design">
+                    <div class="text-content">
+                        <div>
+                            <h2>Restaurant Web Site</h2>
+                            <p>Designed as a gateway to delicious flavors and a cozy atmosphere — with warm visuals and
+                                an intuitive layout.</p>
+                            <a target="_blank"
+                                href="https://www.behance.net/gallery/206296503/Restaurant-Web-Site-UI-Design-template"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="./Images/Behance Post 7.png" alt="Movies App Design">
+                    <div class="text-content">
+                        <div>
+                            <h2>Movies App</h2>
+                            <p>A user-friendly UI template for a Movies App that achieved a 40% increase in user
+                                engagement during beta testing.</p>
+                            <a target="_blank"
+                                href="https://www.figma.com/design/frxJnRuLlE65rrkQiPRxwf/Movies-App?node-id=0-1&t=Aro2t3qMnFA2aJv6-1"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="./Images/Portfolio Web Site green.png" alt="Green Portfolio Design">
+                    <div class="text-content">
+                        <div>
+                            <h2>Portfolio Web Site (Green)</h2>
+                            <p>A responsive Figma template with a clean, minimal design and a refreshing green color
+                                palette easy on the eyes.</p>
+                            <a target="_blank"
+                                href="https://www.figma.com/proto/7BNmfuzADXhRPnsOSJ1MKw/Untitled?page-id=0%3A1&node-id=1-3&viewport=323%2C109%2C0.11&t=L8mQ4C0rLVGChE3C-1&scaling=min-zoom&content-scaling=fixed"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="./Images/Movies Web Site.png" alt="Movies Web Site Design">
                     <div class="text-content">
                         <div>
                             <h2>Movies Web Site</h2>
-                            <p>
-                                Dive into a world of cinematic magic with our latest UI/UX masterpiece.
-                                Stay tuned for more updates!
-                            </p>
-                            <a target="_blank" href="https://www.figma.com/proto/2r1SqZtp7A1njYQzaXRQNc/Movies-Website?page-id=0%3A1&node-id=1-2&viewport=-406%2C406%2C0.64&t=o2pYD4GZfKENJTRg-1&scaling=min-zoom&content-scaling=fixed" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <p>A sleek, immersive cinematic UI/UX masterpiece built for movie lovers who want beauty and
+                                ease of use.</p>
+                            <a target="_blank"
+                                href="https://www.figma.com/proto/2r1SqZtp7A1njYQzaXRQNc/Movies-Website?page-id=0%3A1&node-id=1-2&viewport=-406%2C406%2C0.64&t=o2pYD4GZfKENJTRg-1&scaling=min-zoom&content-scaling=fixed"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="cart">
-                    <img src="./Images/desgne.png" alt="Simple Portfolio">
-                    
+                    <img src="./Images/desgne.png" alt="Simple Portfolio Design">
                     <div class="text-content">
                         <div>
                             <h2>Simple Portfolio</h2>
-                            <p>
-                                This is figma desgne ,
-                                This is a Simple Portfolio designing by me with Figma
-                            </p>
-                            <a target="_blank" href="https://www.figma.com/proto/LkCVNW3Ko6h4fRykVG5dY2/Simple-Portfolio?page-id=0%3A1&type=design&node-id=3-74&viewport=487%2C303%2C0.15&t=BryYex9spbJN9IDp-1&scaling=min-zoom&mode=design" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <p>A clean and minimal portfolio designed entirely in Figma — ideal for creatives who value
+                                simplicity with style.</p>
+                            <a target="_blank"
+                                href="https://www.figma.com/proto/LkCVNW3Ko6h4fRykVG5dY2/Simple-Portfolio?page-id=0%3A1&type=design&node-id=3-74&viewport=487%2C303%2C0.15&t=BryYex9spbJN9IDp-1&scaling=min-zoom&mode=design"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="cart">
-                    <img src="./Images/Behance Post 3.png" />
-                    
+                    <img src="./Images/Behance Post 3.png" alt="Food App Design">
                     <div class="text-content">
                         <div>
                             <h2>Food App</h2>
-                            <p>
-                                Looking to develop a food-related mobile app? Our Figma template makes the design process a breeze! Whether you're creating a recipe app, food delivery service, or restaurant finder.
-                            </p>
-                            <a target="_blank" href="https://www.figma.com/proto/WeFfmF7HcJAkdtiGVfr1I3/Untitled?page-id=0%3A1&type=design&node-id=9-12&viewport=387%2C383%2C0.2&t=lIicoPtXNjxMD4ox-1&scaling=scale-down&mode=design" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <p>A Figma template for food-related apps — whether a recipe app, delivery service, or
+                                restaurant finder. Clean and appetizing.</p>
+                            <a target="_blank"
+                                href="https://www.figma.com/proto/WeFfmF7HcJAkdtiGVfr1I3/Untitled?page-id=0%3A1&type=design&node-id=9-12&viewport=387%2C383%2C0.2&t=lIicoPtXNjxMD4ox-1&scaling=scale-down&mode=design"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="cart">
-                    <img src="./Images/Desktop - 1.png" />
-                    
+                    <img src="./Images/Desktop - 1.png" alt="Login Form Design">
                     <div class="text-content">
                         <div>
-                            <h2>Login <Form></Form></h2>
-                            <p>
-                                To get this template you can contact us in instagram page .
-                                   For more templates, you can see them in our website in Bio or in Behance Accompt.
-                            </p>
-                            <a target="_blank" href="https://www.figma.com/proto/WeFfmF7HcJAkdtiGVfr1I3/Untitled?page-id=0%3A1&type=design&node-id=9-12&viewport=387%2C383%2C0.2&t=lIicoPtXNjxMD4ox-1&scaling=scale-down&mode=design" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <h2>Login Form</h2>
+                            <p>A modern and elegant login form UI — sleek inputs, smooth transitions, and a dark
+                                aesthetic that feels premium.</p>
+                            <a target="_blank"
+                                href="https://www.figma.com/proto/WeFfmF7HcJAkdtiGVfr1I3/Untitled?page-id=0%3A1&type=design&node-id=9-12&viewport=387%2C383%2C0.2&t=lIicoPtXNjxMD4ox-1&scaling=scale-down&mode=design"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-                
-
-
 
                 <div class="cart">
-                    <img src="./Images/Behance img 1.png" alt="Behance image">
-                    
+                    <img src="./Images/Behance img 1.png" alt="E-commerce Website Design">
                     <div class="text-content">
                         <div>
-                            <h2>E-commerce website</h2>
-                            <p>
-                                E-commerce website For Shoes,
-                                This is figma desgne
-                            </p>
-                            <a target="_blank" href="https://www.figma.com/proto/XC5bOembh2RO9svuPvsrO0/Untitled?page-id=0%3A1&type=design&node-id=67-2&viewport=528%2C138%2C0.17&t=R59JvQBrfcPQIWLz-1&scaling=min-zoom&mode=design" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <h2>E-commerce Website</h2>
+                            <p>A Figma design for a shoe e-commerce platform with product listings, detail views, and a
+                                smooth shopping experience.</p>
+                            <a target="_blank"
+                                href="https://www.figma.com/proto/XC5bOembh2RO9svuPvsrO0/Untitled?page-id=0%3A1&type=design&node-id=67-2&viewport=528%2C138%2C0.17&t=R59JvQBrfcPQIWLz-1&scaling=min-zoom&mode=design"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="cart">
-                    <img src="./Images/Behance Post 4.png" alt="Behance image">
-                    
+                    <img src="./Images/Behance Post 4.png" alt="UI Design Template">
                     <div class="text-content">
                         <div>
-                            <h2>UI Design template</h2>
-                            <p>
-                                Introducing a UI template designed specifically for the portfolio of UI and UX designers,
-                            </p>
-                            <a target="_blank" href="https://www.figma.com/proto/VXRYtFZAfi0pG3JYznj5Wz/Untitled?page-id=0%3A1&type=design&node-id=52-198&viewport=395%2C27%2C0.18&t=konNpUIVtm6dY5AT-1&scaling=scale-down&mode=design" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <h2>UI Design Template</h2>
+                            <p>A portfolio UI template designed specifically for UI/UX designers — professional,
+                                structured, and visually compelling.</p>
+                            <a target="_blank"
+                                href="https://www.figma.com/proto/VXRYtFZAfi0pG3JYznj5Wz/Untitled?page-id=0%3A1&type=design&node-id=52-198&viewport=395%2C27%2C0.18&t=konNpUIVtm6dY5AT-1&scaling=scale-down&mode=design"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
+            <!-- WEB DEV -->
             <div class="project-2">
 
-
                 <div class="cart">
-                    <img src="./Images/project img 2.png" />
-                    
+                    <img src="./Images/project img 2.png" alt="Algerian Desert Website">
                     <div class="text-content">
                         <div>
                             <h2>Algerian Desert Website</h2>
-                            <p>
-                                Our website is a visual and informational tribute to the beauty and wonder of the Algerian Sahara.
-                                Through stunning imagery and insightful content, we aim to transport you to this unique landscape
-                            </p>
-                            <a target="_blank" href="https://moncif2005.github.io/AlgDesert/" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <p>A visual and informational tribute to the Algerian Sahara — transporting visitors to this
+                                breathtaking landscape through stunning imagery and rich content.</p>
+                            <a target="_blank" href="https://moncif2005.github.io/AlgDesert/" class="btn-1">Take a look
+                                <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-
-
                 <div class="cart">
-                    <img src="./Images/Gym.PNG" />
-                    
+                    <img src="./Images/Gym.PNG" alt="GymTime Website">
                     <div class="text-content">
                         <div>
                             <h2>GymTime</h2>
-                            <p>
-                                Welcome to the Modern Fitness Center website, where we provide you with the perfect environment for exercising and improving your physical fitness.
-                            </p>
-                            <a target="_blank" href="https://moncif2005.github.io/GymTimeapp/gymtime.html" class="btn-1">Take a look<i class="fa-solid fa-chevron-right"></i></a>
+                            <p>A modern fitness center website providing the perfect online environment to showcase gym
+                                services, schedules, and membership plans.</p>
+                            <a target="_blank" href="https://moncif2005.github.io/GymTimeapp/gymtime.html"
+                                class="btn-1">Take a look <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
 
 
+                <!-- APP DEV -->
+                <div class="project-3" style="">
 
-                
+                    <div class="cart">
+                        <div class="cart-placeholder app-placeholder">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="text-content">
+                            <div>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">Firebase</span>
+                                </div>
+                                <h2>Food Delivery App</h2>
+                                <p>A full-featured mobile food delivery app with real-time order tracking, restaurant
+                                    browsing, and seamless checkout — built with React Native and Firebase.</p>
+                                <a href="#contact" class="btn-1">Coming Soon <i class="fa-solid fa-clock"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="cart-placeholder app-placeholder">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <div class="text-content">
+                            <div>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">Expo</span>
+                                </div>
+                                <h2>GymTime Mobile</h2>
+                                <p>The mobile companion to GymTime — lets members book classes, track workouts, and
+                                    manage memberships directly from their phone.</p>
+                                <a href="#contact" class="btn-1">In Progress <i class="fa-solid fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="cart-placeholder app-placeholder">
+                            <i class="fa-solid fa-film"></i>
+                        </div>
+                        <div class="text-content">
+                            <div>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">TMDB API</span>
+                                </div>
+                                <h2>Movies App</h2>
+                                <p>A cross-platform movies app powered by the TMDB API — browse trending films, read
+                                    reviews, watch trailers, and build a personal watchlist.</p>
+                                <a href="#contact" class="btn-1">Coming Soon <i class="fa-solid fa-clock"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="cart-placeholder app-placeholder">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="text-content">
+                            <div>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">Dart</span>
+                                </div>
+                                <h2>Restaurant App</h2>
+                                <p>A restaurant-facing mobile app for managing menus, reservations, and orders —
+                                    designed to complement the Restaurant Web Site UI design.</p>
+                                <a href="#contact" class="btn-1">In Progress <i class="fa-solid fa-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        </div>
     </section>
 
-   <!--
+
     <section class="contact" id="contact">
 
-        <h1 class="Contact-title">Contact</h1>
-
+        <h1 class="section-title Contact-title">Contact</h1>
 
         <div class="contact-section">
 
             <div class="contact-items">
 
-
                 <div class="contact-text">
-                    
-                        <h2 >Get in touch</h2>
-                        <p>
-                            I’m very approochable and would love to speck to you. Feel free to call, send me on email ,
-                            follow me in social media or simply complete the enquire form.
-                        </p>
-                    
-                    <img class="contact-img" src="./Images/Contact.png" />
+                    <h2>Get in touch</h2>
+                    <p>
+                        I'm very approachable and would love to speak with you. Feel free to send an email,
+                        follow me on social media, or simply complete the form below.
+                    </p>
+                    <img class="contact-img" src="./Images/Contact.png" alt="Contact illustration" />
                 </div>
-
 
                 <div class="chat-content">
-
                     <div class="chating">
-  
-                            <h2 class="chating-titel" >Send me a message</h2>
-                            <div>
-                                <input type="text" placeholder="Name" id="username" class="name" required>
-                                <div class="error-txt">Full Name can't be blank</div>
-                            </div>
-                            
-                            <div>
-                                <input type="text" placeholder="Email" id="email" class="email" required>
-                                <div class="error-txt">Email Address can't be blank</div>
-                            </div>
-                            
-                            <div>
-                                <input type="text" placeholder="Phone" id="phone" class="subject" required>
-                                <div class="error-txt">Message can't be blank</div> 
-                            </div>
+                        <h2 class="chating-titel">Send me a message</h2>
 
-                            <div>             
-                                <textarea type="text" placeholder="Your Message" id="message" class="message" required></textarea>
-                                <div class="error-txt">Message can't be blank</div>
-                            </div>
-                            <a type="submit" value="submit" id="submit" class="btn-1">Submit</a>
+                        <div>
+                            <input type="text" placeholder="Full Name" id="username" class="name" required>
+                            <div class="error-txt" id="name-error">Full Name can't be blank</div>
+                        </div>
 
+                        <div>
+                            <input type="email" placeholder="Email Address" id="email" class="email" required>
+                            <div class="error-txt" id="email-error">Please enter a valid email address</div>
+                        </div>
 
+                        <div>
+                            <input type="tel" placeholder="Phone Number (optional)" id="phone" class="subject">
+                            <div class="error-txt" id="phone-error">Phone number can only contain digits</div>
+                        </div>
+
+                        <div>
+                            <textarea placeholder="Your Message" id="message" class="message" required></textarea>
+                            <div class="error-txt" id="message-error">Message can't be blank</div>
+                        </div>
+
+                        <div class="successful" id="success-msg">
+                            <i class="fa-solid fa-circle-check"></i> Message sent successfully!
+                        </div>
+
+                        <button type="button" id="submit" class="btn-1">Submit <i
+                                class="fa-solid fa-paper-plane"></i></button>
                     </div>
-                    
-
                 </div>
-                
+
             </div>
         </div>
     </section>
-    -->
 
     <footer class="footer-section">
         <div class="container-footer">
@@ -432,74 +667,96 @@
                     <a class="label" href="#skills">Skills</a>
                 </div>
                 <div class="menu-item">
-                    <div class="icon"><img src="./Images/Group 52.svg" alt="Services"></div>
-                    <a class="label" href="#services">Services</a>
+                    <div class="icon"><img src="./Images/Group 52.svg" alt="Projects"></div>
+                    <a class="label" href="#services">Projects</a>
+                </div>
+                <div class="menu-item">
+                    <div class="icon"><i class="fa-solid fa-envelope footer-icon"></i></div>
+                    <a class="label" href="#contact">Contact</a>
                 </div>
             </div>
             <div class="footer">
                 <div class="divider"></div>
                 <div class="footer-content">
-                    <h2 class="terms">Terms of Services - <a target="_blank" href="/privacy-policy.html">Privacy Policy</a></h2>
-                    <h4 class="copyright">Copyrights@Moncif_Abdelilleh</h4>
+                    <h2 class="terms">Terms of Services - <a target="_blank" href="/privacy-policy.html">Privacy
+                            Policy</a></h2>
+                    <h4 class="copyright">Copyright &copy; Moncif_Abdelilleh</h4>
                 </div>
             </div>
         </div>
     </footer>
 
     <script type="module">
-        // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
         import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
-    
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
         const firebaseConfig = {
-          apiKey: "AIzaSyDqIDtZ4R7W0jKnRZE3Sl3OVNU6ZQnfd_0",
-          authDomain: "test2-b2a34.firebaseapp.com",
-          projectId: "test2-b2a34",
-          storageBucket: "test2-b2a34.appspot.com",
-          messagingSenderId: "106858362083",
-          appId: "1:106858362083:web:a79a3db49cb6de719801d6",
-          measurementId: "G-RH5Z60NWGN"
+            apiKey: "AIzaSyDqIDtZ4R7W0jKnRZE3Sl3OVNU6ZQnfd_0",
+            authDomain: "test2-b2a34.firebaseapp.com",
+            projectId: "test2-b2a34",
+            storageBucket: "test2-b2a34.appspot.com",
+            messagingSenderId: "106858362083",
+            appId: "1:106858362083:web:a79a3db49cb6de719801d6",
+            measurementId: "G-RH5Z60NWGN"
         };
-    
-        // Initialize Firebase
+
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
-    
+
         document.getElementById("submit").addEventListener('click', function (e) {
-    e.preventDefault();
+            e.preventDefault();
 
-    // Retrieve values from the form
-    const username = document.getElementById("username").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const message = document.getElementById("message").value.trim();
 
-    // Check if phone contains only numbers
+            // Reset all error/success messages
+            document.querySelectorAll('.error-txt').forEach(el => el.style.display = 'none');
+            document.getElementById('success-msg').style.display = 'none';
 
-    if (!/^\d+$/.test(phone)) {
-        alert("Only numbers are allowed in the phone field!");
-        return;
-    }
+            let hasError = false;
 
-    // Save user data to the database
-    set(ref(db, 'user/' + username), {
-        username: username,
-        email: email,
-        PhoneNumber: phone,
-        message:message
-    }).then(() => {
-        alert("Login Successful!");
-    }).catch((error) => {
-        console.error('Error saving data:', error.message);
-        alert("An error occurred. Please try again.");
-    });
-});
+            if (!username) {
+                document.getElementById('name-error').style.display = 'block';
+                hasError = true;
+            }
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                document.getElementById('email-error').style.display = 'block';
+                hasError = true;
+            }
+            if (phone && !/^\d+$/.test(phone)) {
+                document.getElementById('phone-error').style.display = 'block';
+                hasError = true;
+            }
+            if (!message) {
+                document.getElementById('message-error').style.display = 'block';
+                hasError = true;
+            }
+
+            if (hasError) return;
+
+            set(ref(db, 'messages/' + Date.now()), {
+                username: username,
+                email: email,
+                phoneNumber: phone,
+                message: message,
+                timestamp: new Date().toISOString()
+            }).then(() => {
+                document.getElementById('success-msg').style.display = 'block';
+                document.getElementById("username").value = '';
+                document.getElementById("email").value = '';
+                document.getElementById("phone").value = '';
+                document.getElementById("message").value = '';
+            }).catch((error) => {
+                console.error('Error saving data:', error.message);
+                alert("An error occurred. Please try again.");
+            });
+        });
     </script>
-    
-    
+
     <script src="scrollreveal.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
